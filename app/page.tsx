@@ -1,11 +1,8 @@
 import Image from 'next/image'
-import {LinkButtonAnimated} from "@/components/shared/LinkButtonAnimated";
 import {BiArrowToRight, BiDownload} from "react-icons/bi";
-import {AnchorButtonAnimated} from "@/components/shared/AnchorButtonAnimated";
 import {BsLinkedin} from "react-icons/bs";
 import {FaGithubSquare} from "react-icons/fa";
 import {LinkButton} from "@/components/shared/LinkButton";
-import {AnchorButton} from "@/components/shared/AnchorButton";
 
 
 export default function Home() {
