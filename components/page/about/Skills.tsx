@@ -22,8 +22,8 @@ const fadeInAnimationVariants = {
 
 export const Skills = () => {
     return (
-        <section className="mb-28 max-w-[53rem] scroll-mt-28 text-center sm:mb-40">
-            <h2 className="text-2xl text-center font-bold align-baseline">
+        <section className="container mb-28 max-w-[53rem] scroll-mt-28 text-center sm:mb-40">
+            <h2 className="text-2xl text-center font-bold align-baseline mb-6">
                 Skills
             </h2>
 

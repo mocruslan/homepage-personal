@@ -4,10 +4,10 @@ import {Skills} from "@/components/page/about/Skills";
 
 const About = () => {
     return (
-        <main className="container mx-auto px-6 flex flex-col items-center justify-center gap-10">
-            <section className="flex flex-col-reverse items-center justify-center md:flex-row">
-                <span className="flex flex-col gap-3 w-full px-6 sm:w-[25rem]">
-                    <h2 className="text-2xl text-center md:text-left font-bold align-baseline">
+        <main className="container px-6">
+            <section className="flex flex-col-reverse items-center justify-center mb-24 sm:mb-0 md:flex-row">
+                <span className="flex flex-col w-full px-6 sm:w-[25rem]">
+                    <h2 className="text-2xl text-center font-bold align-baseline mb-6 md:text-left">
                         Biography
                     </h2>
 
@@ -24,7 +24,6 @@ const About = () => {
             <SectionDivider/>
 
             <Skills/>
-
         </main>
     );
 }

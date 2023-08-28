@@ -7,7 +7,7 @@ import {LinkButton} from "@/components/shared/LinkButton";
 
 const Home = () => {
     return (
-        <main className="container mx-auto px-6">
+        <main className="container px-6">
             <section className="flex flex-col items-center justify-center lg:flex-row">
                 <div className="flex items-center justify-center">
                     <Image
