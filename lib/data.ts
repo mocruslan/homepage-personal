@@ -90,3 +90,36 @@ export const skills = [
         icon: FaNodeJs,
     },
 ] as const;
+
+export const careerTimelineItems = [
+    {
+        title: 'Sample Company',
+        role: 'Software Engineer',
+        description: "Nulla proident deserunt labore sint nostrud minim ipsum sunt ut consequat dolor in commodo veniam sunt. Irure aliquip quis sint consequat dolore nisi anim nisi occaecat veniam aliqua ullamco quis. Consequat commodo ipsum dolore do sint. Anim deserunt officia ipsum quis id nulla sint reprehenderit laboris eiusmod sunt.",
+        sidePosition: "left" as "left" | "right",
+    },
+    {
+        title: 'Sample Company',
+        role: 'Software Engineer',
+        description: "Nulla proident deserunt labore sint nostrud minim ipsum sunt ut consequat dolor in commodo veniam sunt. Irure aliquip quis sint consequat dolore nisi anim nisi occaecat veniam aliqua ullamco quis. Consequat commodo ipsum dolore do sint. Anim deserunt officia ipsum quis id nulla sint reprehenderit laboris eiusmod sunt.",
+        sidePosition: "right" as "left" | "right",
+    },
+    {
+        title: 'Sample Company',
+        role: 'Software Engineer',
+        description: "Nulla proident deserunt labore sint nostrud minim ipsum sunt ut consequat dolor in commodo veniam sunt. Irure aliquip quis sint consequat dolore nisi anim nisi occaecat veniam aliqua ullamco quis. Consequat commodo ipsum dolore do sint. Anim deserunt officia ipsum quis id nulla sint reprehenderit laboris eiusmod sunt.",
+        sidePosition: "left" as "left" | "right",
+    },
+    {
+        title: 'Sample Company',
+        role: 'Software Engineer',
+        description: "Nulla proident deserunt labore sint nostrud minim ipsum sunt ut consequat dolor in commodo veniam sunt. Irure aliquip quis sint consequat dolore nisi anim nisi occaecat veniam aliqua ullamco quis. Consequat commodo ipsum dolore do sint. Anim deserunt officia ipsum quis id nulla sint reprehenderit laboris eiusmod sunt.",
+        sidePosition: "right" as "left" | "right",
+    },
+    {
+        title: 'Sample Company',
+        role: 'Software Engineer',
+        description: "Nulla proident deserunt labore sint nostrud minim ipsum sunt ut consequat dolor in commodo veniam sunt. Irure aliquip quis sint consequat dolore nisi anim nisi occaecat veniam aliqua ullamco quis. Consequat commodo ipsum dolore do sint. Anim deserunt officia ipsum quis id nulla sint reprehenderit laboris eiusmod sunt.",
+        sidePosition: "left" as "left" | "right",
+    },
+];
