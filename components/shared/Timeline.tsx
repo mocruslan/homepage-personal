@@ -31,18 +31,18 @@ interface TimelineProps {
 const TimelineBox = (props: TimelineItemProps) => {
     return (
         <div className={cn(
-            "flex items-center justify-between mb-8 w-full text-left",
-            {"flex-row-reverse" : props.sidePosition === "left"},
-            {"flex-row" : props.sidePosition === "right"},
+            "mb-8 w-full text-left sm:flex sm:items-center sm:justify-between",
+            {"sm:flex-row-reverse" : props.sidePosition === "left"},
+            {"sm:flex-row" : props.sidePosition === "right"},
         )}
         >
-            <div className="order-1 w-5/12"></div>
+            <div className="order-1 w-5/12 hidden sm:block"></div>
 
-            <div className="flex items-center justify-center order-1 z-20 bg-gray-800 shadow-xl w-8 h-8 rounded-full">
+            <div className="bg-gray-800 shadow-xl w-8 h-8 rounded-full hidden sm:flex sm:items-center sm:justify-center sm:order-1">
                 <div className="mx-auto font-semibold text-lg text-white"></div>
             </div>
 
-            <div className="order-1 bg-white border border-black/[0.1] rounded-xl shadow-xl w-5/12 px-6 py-4 hover:scale-105 hover:bg-gray-100 transition">
+            <div className="bg-white border border-black/[0.1] rounded-xl shadow-xl px-6 py-4 sm:w-5/12 sm:order-1 hover:scale-105 hover:bg-gray-100 transition">
                 <h3 className="mb-3 font-bold text-gray-900 text-xl">{props.title}</h3>
                 <h4 className="mb-1 font-normal text-gray-850 text-sm">{props.role}</h4>
 
@@ -59,7 +59,7 @@ const CenterLine = () => {
             whileInView={{opacity: 1}}
             viewport={{once: true}}
 
-            className="absolute border border-gray-700/10 h-full left-1/2"
+            className="absolute border border-gray-700/10 h-full left-1/2 sm:block"
         />
     );
 }
@@ -80,6 +80,8 @@ export const Timeline = (props: TimelineProps) => {
                             whileInView="animate"
                             viewport={{once: true}}
                             custom={index}
+
+                            className="relative z-10"
                         >
                             <TimelineBox
                                 title={item.title}
