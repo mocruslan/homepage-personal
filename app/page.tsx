@@ -5,9 +5,9 @@ import {FaGithubSquare} from "react-icons/fa";
 import {LinkButton} from "@/components/shared/LinkButton";
 
 
-export default function Home() {
+const Home = () => {
     return (
-        <main className="container mx-auto">
+        <main className="container px-6">
             <section className="flex flex-col items-center justify-center lg:flex-row">
                 <div className="flex items-center justify-center">
                     <Image
@@ -21,7 +21,7 @@ export default function Home() {
                     />
                 </div>
 
-                <div className="flex flex-col items-start justify-start mx-10 sm:mx-20 gap-6">
+                <div className="flex flex-col items-start justify-start gap-6">
                     <span className="flex flex-col sm:max-w-md">
                         <h1 className="text-left text-2xl sm:text-4xl font-bold leading-snug align-baseline">
                             Turning Vision into <br/> reality with code <br/> and design.
@@ -66,3 +66,5 @@ export default function Home() {
         </main>
     )
 }
+
+export default Home;
