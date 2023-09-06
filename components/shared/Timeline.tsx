@@ -1,5 +1,6 @@
 "use client"
 
+import React from "react";
 import {cn} from "@/lib/utils";
 import {motion} from "framer-motion";
 
@@ -17,23 +18,23 @@ const fadeInAnimationVariants = {
     }),
 }
 
-interface TimelineItemProps {
+type TimelineItemProps = {
     title: string,
     role: string,
     description: string,
     sidePosition: "left" | "right",
 }
 
-interface TimelineProps {
+type TimelineProps = {
     items: TimelineItemProps[],
 }
 
-const TimelineBox = (props: TimelineItemProps) => {
+const TimelineBox = ({title, role, description, sidePosition}: TimelineItemProps) => {
     return (
         <div className={cn(
             "mb-8 w-full text-left sm:flex sm:items-center sm:justify-between",
-            {"sm:flex-row-reverse" : props.sidePosition === "left"},
-            {"sm:flex-row" : props.sidePosition === "right"},
+            {"sm:flex-row-reverse" : sidePosition === "left"},
+            {"sm:flex-row" : sidePosition === "right"},
         )}
         >
             <div className="order-1 w-5/12 hidden sm:block"></div>
@@ -43,10 +44,10 @@ const TimelineBox = (props: TimelineItemProps) => {
             </div>
 
             <div className="bg-white border border-black/[0.1] rounded-xl shadow-xl px-6 py-4 sm:w-5/12 sm:order-1 hover:scale-105 hover:bg-gray-100 transition">
-                <h3 className="mb-3 font-bold text-gray-900 text-xl">{props.title}</h3>
-                <h4 className="mb-1 font-normal text-gray-850 text-sm">{props.role}</h4>
+                <h3 className="mb-3 font-bold text-gray-900 text-xl">{title}</h3>
+                <h4 className="mb-1 font-normal text-gray-850 text-sm">{role}</h4>
 
-                <p className="font-light text-sm text-gray-800">{props.description}</p>
+                <p className="font-light text-sm text-gray-800">{description}</p>
             </div>
         </div>
     );
@@ -73,23 +74,21 @@ export const Timeline = (props: TimelineProps) => {
 
                 {
                     props.items.map((item: TimelineItemProps, index: number) => (
-                        <motion.div
-                            key={index}
-                            variants={fadeInAnimationVariants}
-                            initial="initial"
-                            whileInView="animate"
-                            viewport={{once: true}}
-                            custom={index}
+                        <React.Fragment key={index}>
+                            <motion.div
+                                variants={fadeInAnimationVariants}
+                                initial="initial"
+                                whileInView="animate"
+                                viewport={{once: true}}
+                                custom={index}
 
-                            className="relative z-10"
-                        >
-                            <TimelineBox
-                                title={item.title}
-                                role={item.role}
-                                description={item.description}
-                                sidePosition={item.sidePosition}
-                            />
-                        </motion.div>
+                                className="relative z-10"
+                            >
+                                <TimelineBox
+                                    {...item}
+                                />
+                            </motion.div>
+                        </React.Fragment>
                     ))
                 }
             </div>
