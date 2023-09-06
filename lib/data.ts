@@ -3,6 +3,9 @@ import {FaReact} from "react-icons/fa";
 import {BiLogoMongodb, BiLogoTypescript} from "react-icons/bi";
 import {SiAmazondynamodb, SiMariadb} from "react-icons/si";
 import {TbBrandNextjs} from "react-icons/tb";
+import PlaceHolderWebsite1 from "@/public/img/placeholder-website-1.png";
+import PlaceHolderWebsite2 from "@/public/img/placeholder-website-2.png";
+import PlaceHolderWebsite3 from "@/public/img/placeholder-website-3.png";
 
 export const navLinks = [
     {
@@ -123,3 +126,39 @@ export const careerTimelineItems = [
         sidePosition: "left" as "left" | "right",
     },
 ];
+
+export const projects = [
+    {
+        title: 'Sample Project',
+        description: "Nulla proident deserunt labore sint nostrud minim ipsum sunt ut consequat dolor in commodo veniam sunt. Irure aliquip quis sint consequat dolore nisi anim nisi occaecat veniam aliqua ullamco quis.",
+        programmingLanguages: [
+            "C",
+            "PHP",
+            "JavaScript",
+        ],
+        image: PlaceHolderWebsite1,
+        link: "https://google.com",
+    },
+    {
+        title: 'Sample Project',
+        description: "Nulla proident deserunt labore sint nostrud minim ipsum sunt ut consequat dolor in commodo veniam sunt. Irure aliquip quis sint consequat dolore nisi anim nisi occaecat veniam aliqua ullamco quis.",
+        programmingLanguages: [
+            "C",
+            "PHP",
+            "JavaScript",
+        ],
+        image: PlaceHolderWebsite2,
+        link: "https://google.com",
+    },
+    {
+        title: 'Sample Project',
+        description: "Nulla proident deserunt labore sint nostrud minim ipsum sunt ut consequat dolor in commodo veniam sunt. Irure aliquip quis sint consequat dolore nisi anim nisi occaecat veniam aliqua ullamco quis.",
+        programmingLanguages: [
+            "C",
+            "PHP",
+            "JavaScript",
+        ],
+        image: PlaceHolderWebsite3,
+        link: "https://google.com",
+    },
+] as const;
