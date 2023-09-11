@@ -6,9 +6,16 @@ const Projects = () => {
     return (
         <main className="container px-6">
             <section className="flex flex-col gap-5 text-left">
-                <h2 className="text-2xl text-center font-bold align-baseline mb-6">
-                    Projects
-                </h2>
+                <article className="container text-center align-baseline mb-10">
+                    <h2 className="text-2xl text-center font-bold mb-6">
+                        Projects
+                    </h2>
+                    <p className="mx-auto text-left font-light w-full px-6 sm:w-[38rem]">
+                        Ad labore tempor officia dolor minim qui ullamco magna. Voluptate mollit veniam do veniam Lorem nulla pariatur velit. Laboris sint nulla sunt nulla occaecat. Velit commodo non ut. Tempor pariatur quis magna excepteur. Officia commodo nostrud reprehenderit adipisicing esse ea laboris sit.
+                        <br/><br/>
+                        Ad labore tempor officia dolor minim qui ullamco magna. Voluptate mollit veniam do veniam Lorem nulla pariatur velit. Laboris sint nulla sunt nulla occaecat. Velit commodo non ut. Tempor pariatur quis magna excepteur. Officia commodo nostrud reprehenderit adipisicing esse ea laboris sit.
+                    </p>
+                </article>
 
                 {
                     projects.map((project, index: number) => (
