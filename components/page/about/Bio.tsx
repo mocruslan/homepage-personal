@@ -1,12 +1,13 @@
 import {LottieAutoplay} from "@/components/shared/LottieAutoplay";
+import ParagraphTitle from "@/components/ParagraphTitle";
 
 export const Bio = () => {
   return (
       <section className="flex flex-col-reverse items-center justify-center mb-24 sm:mb-0 md:flex-row">
                 <span className="flex flex-col w-full px-6 sm:w-[25rem]">
-                    <h2 className="text-2xl text-center font-bold align-baseline mb-6 md:text-left">
+                    <ParagraphTitle className="md:text-left">
                         Biography
-                    </h2>
+                    </ParagraphTitle>
 
                      <article className="text-gray-950 text-left font-extralight">
                          Fugiat minim irure mollit amet non dolore amet ex nulla enim reprehenderit nisi. Non dolor deserunt ea proident anim. Exercitation veniam aliquip occaecat esse pariatur culpa exercitation nulla fugiat aliquip Lorem ad Lorem. Pariatur fugiat proident ex in. Proident aliqua consequat aliquip cillum nostrud irure. Irure duis aliqua minim.

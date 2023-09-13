@@ -2,6 +2,7 @@
 
 import {skills} from "@/lib/data";
 import {motion} from "framer-motion";
+import ParagraphTitle from "@/components/ParagraphTitle";
 
 const fadeInAnimationVariants = {
     initial: {
@@ -23,9 +24,9 @@ const fadeInAnimationVariants = {
 export const Skills = () => {
     return (
         <section className="container mb-28 max-w-[53rem] scroll-mt-28 text-center sm:mb-40">
-            <h2 className="text-2xl text-center font-bold align-baseline mb-6">
+            <ParagraphTitle>
                 Skills
-            </h2>
+            </ParagraphTitle>
 
             {/* TODO: Check whether gap or mb is better and adapt the project*/}
             <ul className="flex flex-wrap justify-center gap-2 text-lg text-gray-800">
