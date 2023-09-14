@@ -34,7 +34,7 @@ export const ProjectCard = ({title, description, programmingLanguages, image, li
                     height={400}
                     quality={90}
                     className="
-                    absolute top-[14rem] -right-40 w-[28.25rem] rounded-t-lg shadow-2xl transition sm:top-8 sm:-right-40
+                    absolute top-[14rem] -right-40 w-[28.25rem] rounded-t-lg shadow-2xl transition sm:top-8
                     group-even:right-[initial]
                     group-even:-left-40
                     group-hover:scale-[1.04]
