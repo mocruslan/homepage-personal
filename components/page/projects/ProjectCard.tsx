@@ -7,7 +7,7 @@ type ProjectCardProps = typeof projects[number];
 export const ProjectCard = ({title, description, programmingLanguages, image, link}: ProjectCardProps) => {
     return (
         <section
-            className="group relative flex flex-col container bg-white max-w-[42rem] rounded-2xl border border-black/5 mb-3 sm:mb-8 overflow-hidden sm:pr-8 sm:h-[20rem] last:mb-0 hover:bg-gray-100 transition">
+            className="group relative flex flex-col container bg-white max-w-[42rem] rounded-2xl border border-black/5 mb-3 h-[25rem] sm:mb-8 overflow-hidden sm:pr-8 sm:h-[20rem] last:mb-0 hover:bg-gray-100 transition">
             <div
                 className="flex flex-col pt-4 pb-7 px-5 h-full sm:group-even:ml-[18rem] sm:pl-10 sm:pr-2 sm:pt-10 sm:max-w-[50%]">
                 <h3 className="text-2xl font-semibold">{title}</h3>
@@ -34,7 +34,7 @@ export const ProjectCard = ({title, description, programmingLanguages, image, li
                     height={400}
                     quality={90}
                     className="
-                    absolute top-8 -right-40 w-[28.25rem] rounded-t-lg shadow-2xl transition
+                    absolute top-[14rem] -right-40 w-[28.25rem] rounded-t-lg shadow-2xl transition sm:top-8 sm:-right-40
                     group-even:right-[initial]
                     group-even:-left-40
                     group-hover:scale-[1.04]
