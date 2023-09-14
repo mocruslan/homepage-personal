@@ -1,12 +1,13 @@
 import {careerTimelineItems} from "@/lib/data";
 import {Timeline} from "@/components/shared/Timeline";
+import ParagraphTitle from "@/components/ParagraphTitle";
 
 export const CareerTimeline = () => {
     return (
         <section className="container mb-24 text-center sm:mb-0 md:flex-row">
-            <h2 className="text-2xl text-center font-bold align-baseline mb-6">
+            <ParagraphTitle>
                 Experience
-            </h2>
+            </ParagraphTitle>
 
             <Timeline items={careerTimelineItems}/>
         </section>
