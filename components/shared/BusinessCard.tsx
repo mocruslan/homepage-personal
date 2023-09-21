@@ -4,6 +4,10 @@ import React, {useState} from "react";
 import {SectionDivider} from "@/components/shared/SectionDivider";
 import {cn} from "@/lib/utils";
 import {FaHandPointer} from "react-icons/fa6";
+import {VT323} from "next/font/google";
+
+const VT323Font = VT323({subsets: ['latin'], weight: '400'})
+
 
 const FrontSite = () => {
     return (
@@ -18,7 +22,7 @@ const FrontSite = () => {
             {/*/>*/}
 
             <h1 className="
-                uppercase text-4xl transition
+                uppercase text-5xl transition
                 group-hover:-translate-y-6
                 "
             >
@@ -32,7 +36,7 @@ const FrontSite = () => {
             />
 
             <p className="
-                absolute text-sm text-center font-extralight top-[8rem] opacity-0 uppercase transition
+                absolute text-lg text-center font-extralight top-[8rem] opacity-0 uppercase transition
                 group-hover:opacity-100
                 group-hover:translate-y-2"
             >
@@ -41,7 +45,7 @@ const FrontSite = () => {
 
             <div
                 className="
-                    absolute bottom-6 left-1/2 opacity-50 animate-bounce
+                    absolute bottom-4 left-1/2 opacity-50 animate-bounce
                     group-hover:animate-none
                 ">
                 <FaHandPointer/>
@@ -53,8 +57,8 @@ const FrontSite = () => {
 const BackSite = () => {
     return (
         <div className="absolute flex flex-col items-center justify-center h-full w-full bg-gray-700 rounded-2xl inset-0 p-5 text-orange-300 [transform:rotateY(180deg)] [backface-visibility:hidden]">
-            <h2 className="uppercase text-2xl">
-                Ruslan&nbsp;<span className="uppercase font-semibold">Mochulksyy</span>
+            <h2 className="uppercase text-4xl">
+                Ruslan&nbsp;<span className="uppercase font-semibold">Mochulskyy</span>
             </h2>
 
             <SectionDivider className="h-[2px] w-[16rem] bg-orange-300 m-0 block"/>
@@ -76,14 +80,13 @@ const BackSite = () => {
 
 const BusinessCard = () => {
     // https://codepen.io/jboeijenga/pen/VwGPmd
-
     const [isFlipped, setFlipped] = useState(false as boolean);
 
     return (
         <div
             className={cn(
                 "relative container group w-[26rem] h-[14rem] bg-gray-700 rounded-2xl shadow-2xl duration-500 [transform-style:preserve-3d] transition-all",
-                {"[transform:rotateY(180deg)]": isFlipped},
+                {"[transform:rotateY(180deg)]": isFlipped}, VT323Font.className
             )}
             onClick={() => setFlipped(!isFlipped)}
         >
