@@ -1,5 +1,12 @@
-export const SectionDivider = () => {
+import {cn} from "@/lib/utils";
+
+interface SectionDividerProps {
+    className?: string;
+}
+
+export const SectionDivider = ({className}: SectionDividerProps) => {
+    // TODO: Make section divider more dynamic (use props to change horizontal or vertical alignment)
     return (
-        <div className="container bg-gray-200 my-24 h-16 w-1 rounded-full hidden sm:block"/>
+        <div className={cn("container bg-gray-200 my-24 h-16 w-1 rounded-full hidden sm:block", className)}/>
     );
 }
