@@ -11,16 +11,7 @@ const VT323Font = VT323({subsets: ['latin'], weight: '400'})
 
 const FrontSite = () => {
     return (
-        <div className="absolute flex flex-col items-center justify-center h-full w-full inset-0 l p-4 text-orange-300"
-        >
-            {/*<Image*/}
-            {/*    src={"/img/profile-picture.png"}*/}
-            {/*    alt={"Business Card Image"}*/}
-            {/*    width={200}*/}
-            {/*    height={200}*/}
-            {/*    className="absolute top-0 left-0"*/}
-            {/*/>*/}
-
+        <div className="absolute flex flex-col items-center justify-center h-full w-full inset-0 l p-4 text-orange-300">
             <h1 className="
                 uppercase text-5xl transition
                 group-hover:-translate-y-6
@@ -56,7 +47,8 @@ const FrontSite = () => {
 
 const BackSite = () => {
     return (
-        <div className="absolute flex flex-col items-center justify-center h-full w-full bg-gray-700 rounded-2xl inset-0 p-5 text-orange-300 [transform:rotateY(180deg)] [backface-visibility:hidden]">
+        <div
+            className="absolute flex flex-col items-center justify-center h-full w-full bg-gray-700 rounded-2xl inset-0 p-5 text-orange-300 [transform:rotateY(180deg)] [backface-visibility:hidden]">
             <h2 className="uppercase text-4xl">
                 Ruslan&nbsp;<span className="uppercase font-semibold">Mochulskyy</span>
             </h2>
@@ -77,18 +69,29 @@ const BackSite = () => {
     );
 }
 
+type BusinessCardProps = {
+    className?: string;
+    onCardFlipped?: () => void;
+}
 
-const BusinessCard = () => {
-    // https://codepen.io/jboeijenga/pen/VwGPmd
-    const [isFlipped, setFlipped] = useState(false as boolean);
+const BusinessCard = ({className, onCardFlipped}: BusinessCardProps) => {
+    const [isFlipped, setFlipped] = useState(false);
+
+    const handleClick = () => {
+        setFlipped(!isFlipped);
+
+        if (onCardFlipped) {
+            onCardFlipped();
+        }
+    }
 
     return (
         <div
             className={cn(
                 "relative container group w-[26rem] h-[14rem] bg-gray-700 rounded-2xl shadow-2xl duration-500 [transform-style:preserve-3d] transition-all",
-                {"[transform:rotateY(180deg)]": isFlipped}, VT323Font.className
+                className, {"[transform:rotateY(180deg)]": isFlipped}, VT323Font.className
             )}
-            onClick={() => setFlipped(!isFlipped)}
+            onClick={handleClick}
         >
             <FrontSite/>
             <BackSite/>
