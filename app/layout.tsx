@@ -10,7 +10,7 @@ const inter = Inter({subsets: ['latin']})
 export const metadata: Metadata = {
     title: 'Ruslan | Personal website',
     description: 'Ruslan is a software engineer who specializes in building (and occasionally designing) exceptional digital experiences. Currently, he’s focused on building accessible, human-centered products at Upstatement. Previously, he’s worked at companies like DiniTech and niceshops.',
-    colorScheme: 'light dark',
+    colorScheme: 'light',
 }
 
 export default function RootLayout({children,}: { children: React.ReactNode }) {

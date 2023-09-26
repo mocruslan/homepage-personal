@@ -22,7 +22,7 @@ export const navLinks = [
     },
     {
         name: 'Contact',
-        href: '/experience',
+        href: '/contact',
     },
 ] as const;
 
