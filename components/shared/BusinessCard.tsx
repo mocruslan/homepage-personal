@@ -8,20 +8,18 @@ import {VT323} from "next/font/google";
 
 const VT323Font = VT323({subsets: ['latin'], weight: '400'})
 
-
 const FrontSite = () => {
     return (
-        <div className="absolute flex flex-col items-center justify-center h-full w-full inset-0 l p-4 text-orange-300">
+        <div className="absolute flex flex-col items-center justify-center h-full w-full inset-0 l p-4 [backface-visibility:hidden]">
             <h1 className="
                 uppercase text-5xl transition
-                group-hover:-translate-y-6
-                "
+                group-hover:-translate-y-6"
             >
                 Hello
             </h1>
 
             <SectionDivider className="
-                absolute w-[16rem] h-1 bg-orange-300 -translate-x-1/4 opacity-0 transition duration-100 block m-0
+                absolute w-[16rem] h-1 bg-gray-800 -translate-x-1/4 opacity-0 rounded-2xl transition duration-100 m-0 block
                 group-hover:opacity-100
                 group-hover:translate-x-0"
             />
@@ -48,14 +46,14 @@ const FrontSite = () => {
 const BackSite = () => {
     return (
         <div
-            className="absolute flex flex-col items-center justify-center h-full w-full bg-gray-700 rounded-2xl inset-0 p-5 text-orange-300 [transform:rotateY(180deg)] [backface-visibility:hidden]">
+            className="absolute flex flex-col items-center justify-center h-full w-full rounded-2xl inset-0 p-5 [transform:rotateY(180deg)] [backface-visibility:hidden]">
             <h2 className="uppercase text-4xl">
-                Ruslan&nbsp;<span className="uppercase font-semibold">Mochulskyy</span>
+                Ruslan&nbsp;<span className="uppercase font-medium">Mochulskyy</span>
             </h2>
 
-            <SectionDivider className="h-[2px] w-[16rem] bg-orange-300 m-0 block"/>
+            <SectionDivider className="h-1 w-[16rem] bg-gray-800 m-0 block"/>
 
-            <p className="font-semibold">
+            <p className="font-medium">
                 Fullstack Developer
             </p>
 
@@ -78,17 +76,19 @@ const BusinessCard = ({className, onCardFlipped}: BusinessCardProps) => {
     const [isFlipped, setFlipped] = useState(false);
 
     const handleClick = () => {
-        setFlipped(!isFlipped);
+        if (!isFlipped) {
+            setFlipped(true);
 
-        if (onCardFlipped) {
-            onCardFlipped();
+            if (onCardFlipped) {
+                onCardFlipped();
+            }
         }
     }
 
     return (
         <div
             className={cn(
-                "relative container group w-[26rem] h-[14rem] bg-gray-700 rounded-2xl shadow-2xl duration-500 [transform-style:preserve-3d] transition-all",
+                "relative container group w-[26rem] h-[14rem] bg-gradient-to-tl from-green-300/50 via-blue-500/50 to-purple-600/50 text-gray-800 rounded-2xl shadow-2xl duration-500 [transform-style:preserve-3d] transition-all",
                 className, {"[transform:rotateY(180deg)]": isFlipped}, VT323Font.className
             )}
             onClick={handleClick}

@@ -1,7 +1,7 @@
 "use client"
 
 import React, {useState} from "react";
-import ContactForm from "@/components/page/contact/ContactForm";
+import {ContactForm} from "@/components/page/contact/ContactForm";
 import ParagraphTitle from "@/components/ParagraphTitle";
 import {BusinessCard} from "@/components/shared/BusinessCard";
 import {cn} from "@/lib/utils";
@@ -20,14 +20,14 @@ const Contact = () => {
                     Let&apos;s get in contact!
                 </ParagraphTitle>
 
-                <div className="flex flex-col gap-5 md:flex-row">
-                    <BusinessCard onCardFlipped={handleCardFlipped}/>
+                <div className="flex flex-col items-center justify-center gap-5">
+                    <BusinessCard onCardFlipped={handleCardFlipped} className="z-50"/>
 
                     <div
                         className={cn(
-                            "flex-none invisible opacity-0 translate-x-[6rem] w-0 h-0 duration-500 overflow-hidden transition-all",
+                            "z-40 flex-none invisible opacity-0 -translate-y-[12rem] duration-500 overflow-hidden transition-all",
                             {
-                                'flex-1 visible opacity-100 translate-x-0 w-auto h-auto': isCardFlipped
+                                'flex-1 visible opacity-100 translate-y-0 w-[26rem]': isCardFlipped
                             }
                         )}
                     >
