@@ -2,7 +2,7 @@
 
 import React, {useState} from "react";
 import {SectionDivider} from "@/components/shared/SectionDivider";
-import {cn} from "@/lib/utils";
+import {cn} from "@/utils/css";
 import {FaHandPointer} from "react-icons/fa6";
 import {VT323} from "next/font/google";
 
