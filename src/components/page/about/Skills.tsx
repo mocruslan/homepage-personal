@@ -1,6 +1,6 @@
 "use client"
 
-import {skills} from "@/lib/data";
+import {skills} from "@/src/data/data";
 import {motion} from "framer-motion";
 import ParagraphTitle from "@/src/components/ParagraphTitle";
 

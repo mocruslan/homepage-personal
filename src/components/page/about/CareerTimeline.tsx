@@ -1,4 +1,4 @@
-import {careerTimelineItems} from "@/lib/data";
+import {careerTimelineItems} from "@/src/data/data";
 import {Timeline} from "@/src/components/shared/Timeline";
 import ParagraphTitle from "@/src/components/ParagraphTitle";
 

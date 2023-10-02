@@ -3,7 +3,7 @@
 import React from "react";
 import Link from "next/link";
 import {motion} from "framer-motion";
-import {navLinks} from "@/lib/data";
+import {navLinks} from "@/src/data/data";
 
 export const NavBar = () => {
     return (

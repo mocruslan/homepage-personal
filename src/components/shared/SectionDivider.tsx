@@ -1,4 +1,4 @@
-import {cn} from "@/utils/css";
+import {cn} from "@/src/utils/css";
 
 interface SectionDividerProps {
     className?: string;

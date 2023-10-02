@@ -4,7 +4,7 @@ import React, {useState} from "react";
 import {ContactForm} from "@/src/components/page/contact/ContactForm";
 import ParagraphTitle from "@/src/components/ParagraphTitle";
 import {BusinessCard} from "@/src/components/shared/BusinessCard";
-import {cn} from "@/utils/css";
+import {cn} from "@/src/utils/css";
 
 const Contact = () => {
     const [isCardFlipped, setCardFlipped] = useState(false)

@@ -1,4 +1,4 @@
-import {projects} from "@/lib/data";
+import {projects} from "@/src/data/data";
 import Image from "next/image";
 import Link from "next/link";
 

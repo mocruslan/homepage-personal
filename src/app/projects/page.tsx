@@ -1,5 +1,5 @@
 import React from 'react';
-import {projects} from "@/lib/data";
+import {projects} from "@/src/data/data";
 import {ProjectCard} from "@/src/components/page/projects/ProjectCard";
 import ParagraphTitle from "@/src/components/ParagraphTitle";
 

@@ -1,7 +1,7 @@
 "use client"
 
 import React from "react";
-import {cn} from "@/utils/css";
+import {cn} from "@/src/utils/css";
 import {motion} from "framer-motion";
 
 const fadeInAnimationVariants = {
