@@ -2,8 +2,8 @@ import './globals.css'
 import type {Metadata} from 'next'
 import {Inter} from 'next/font/google'
 import React from "react";
-import {Header} from "@/components/header/Header";
-import {Background} from "@/components/Background";
+import {Header} from "@/src/components/header/Header";
+import {Background} from "@/src/components/Background";
 
 const inter = Inter({subsets: ['latin']})
 

@@ -2,7 +2,7 @@ import Image from 'next/image'
 import {BiArrowToRight, BiDownload} from "react-icons/bi";
 import {BsLinkedin} from "react-icons/bs";
 import {FaGithubSquare} from "react-icons/fa";
-import {LinkButton} from "@/components/shared/LinkButton";
+import {LinkButton} from "@/src/components/shared/LinkButton";
 
 
 const Home = () => {

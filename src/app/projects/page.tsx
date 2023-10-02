@@ -1,7 +1,7 @@
 import React from 'react';
 import {projects} from "@/lib/data";
-import {ProjectCard} from "@/components/page/projects/ProjectCard";
-import ParagraphTitle from "@/components/ParagraphTitle";
+import {ProjectCard} from "@/src/components/page/projects/ProjectCard";
+import ParagraphTitle from "@/src/components/ParagraphTitle";
 
 const Projects = () => {
     return (

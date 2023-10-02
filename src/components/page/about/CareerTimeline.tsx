@@ -1,6 +1,6 @@
 import {careerTimelineItems} from "@/lib/data";
-import {Timeline} from "@/components/shared/Timeline";
-import ParagraphTitle from "@/components/ParagraphTitle";
+import {Timeline} from "@/src/components/shared/Timeline";
+import ParagraphTitle from "@/src/components/ParagraphTitle";
 
 export const CareerTimeline = () => {
     return (

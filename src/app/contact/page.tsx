@@ -1,9 +1,9 @@
 "use client"
 
 import React, {useState} from "react";
-import {ContactForm} from "@/components/page/contact/ContactForm";
-import ParagraphTitle from "@/components/ParagraphTitle";
-import {BusinessCard} from "@/components/shared/BusinessCard";
+import {ContactForm} from "@/src/components/page/contact/ContactForm";
+import ParagraphTitle from "@/src/components/ParagraphTitle";
+import {BusinessCard} from "@/src/components/shared/BusinessCard";
 import {cn} from "@/utils/css";
 
 const Contact = () => {

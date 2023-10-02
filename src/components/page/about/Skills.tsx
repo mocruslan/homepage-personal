@@ -2,7 +2,7 @@
 
 import {skills} from "@/lib/data";
 import {motion} from "framer-motion";
-import ParagraphTitle from "@/components/ParagraphTitle";
+import ParagraphTitle from "@/src/components/ParagraphTitle";
 
 const fadeInAnimationVariants = {
     initial: {

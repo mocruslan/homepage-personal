@@ -1,5 +1,5 @@
-import {LottieAutoplay} from "@/components/shared/LottieAutoplay";
-import ParagraphTitle from "@/components/ParagraphTitle";
+import {LottieAutoplay} from "@/src/components/shared/LottieAutoplay";
+import ParagraphTitle from "@/src/components/ParagraphTitle";
 
 export const Bio = () => {
   return (

@@ -1,15 +1,21 @@
-"use client"
-
 import React from "react";
-import FormInput from "@/components/shared/FormInput";
-import {Button} from "@/components/shared/Button";
+import FormInput from "@/src/components/shared/FormInput";
+import {Button} from "@/src/components/shared/Button";
 
 export const ContactForm = () => {
     return (
         <form
             className="flex flex-col w-full bg-white bg-opacity-80 shadow-lg shadow-black/[0.03] rounded-2xl p-5"
-            onSubmit={(e) => {
-                e.preventDefault();
+            action={async (formData) => {
+                // const { data, error } =
+                //     await sendEmail(formData);
+
+                // if (error) {
+                //     toast.error(error);
+                //     return;
+                // }
+                //
+                // toast.success("Email sent successfully!");
             }}
         >
             <FormInput
@@ -24,7 +30,7 @@ export const ContactForm = () => {
             <FormInput
                 inputLabel="Email"
                 labelFor="email"
-                inputType="email"
+                inputType="senderEmail"
                 inputId="email"
                 inputName="email"
                 placeholderText="Your email"

@@ -2,7 +2,7 @@
 
 import React from "react";
 import {motion} from "framer-motion";
-import {LinkButton} from "@/components/shared/LinkButton";
+import {LinkButton} from "@/src/components/shared/LinkButton";
 
 type LinkButtonAnimatedProps = {
     href: string,
