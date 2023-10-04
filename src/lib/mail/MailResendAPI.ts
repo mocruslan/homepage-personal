@@ -23,7 +23,7 @@ export class MailResendAPI extends AbstractMailAPI {
             data = await this.getClient().emails.send({
                 from: entity.fromSender,
                 to: entity.toReceiver,
-                reply_to: entity.toReceiver,
+                reply_to: entity.toCC,
                 subject: entity.subject,
                 html: '<p>' + entity.content + '</p>'
             });
