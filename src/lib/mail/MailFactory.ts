@@ -20,8 +20,8 @@ export class MailFactory {
         }
 
         return new MailEntity(
-            process.env.RESEND_EMAIL || '',
-            process.env.PERSONAL_EMAIL || '',
+            process.env.EMAIL_RESEND || '',
+            process.env.EMAIL_PERSONAL || '',
             subject as string,
             message as string,
             senderEmail as string,

@@ -9,7 +9,7 @@ export class MailResendAPI extends AbstractMailAPI {
 
     protected getClient(): Resend {
         if (!this.client) {
-            this.client = new Resend( process.env.RESEND_API_KEY);
+            this.client = new Resend( process.env.API_KEY_RESEND);
         }
 
         return this.client
