@@ -3,6 +3,8 @@ import {AbstractMailAPI} from "@/src/lib/mail/abstract/AbstractMailAPI";
 import {Resend} from "resend";
 import {MailEntity} from "@/src/lib/mail/MailEntity";
 import {ErrorHelper} from "@/src/utils/Helper/ErrorHelper";
+import {ContactFormEmail} from "@/src/email/ContactFormEmail";
+import React from "react";
 
 export class MailResendAPI extends AbstractMailAPI {
     protected client?: Resend;
@@ -25,7 +27,10 @@ export class MailResendAPI extends AbstractMailAPI {
                 to: entity.toReceiver,
                 reply_to: entity.toCC,
                 subject: entity.subject,
-                html: '<p>' + entity.content + '</p>'
+                react: React.createElement(ContactFormEmail, {
+                    senderEmail: entity.toReceiver,
+                    message: entity.content,
+                })
             });
         } catch (err: unknown) {
             let error = ErrorHelper.getErrorMessage(err);

@@ -1,6 +1,5 @@
 import React from "react";
 import FormInput from "@/src/components/shared/FormInput";
-import {Button} from "@/src/components/shared/Button";
 import {sendMailAction} from "@/src/actions/sendMailAction";
 import {
     FIELD_NAME_EMAIL_FROM,
@@ -8,13 +7,22 @@ import {
     FIELD_NAME_MESSAGE,
     FIELD_NAME_SUBJECT
 } from "@/src/lib/mail/MailConst";
+import toast from "react-hot-toast";
+import {SubmitButton} from "@/src/components/shared/SubmitButton";
+import {FaPaperPlane} from "react-icons/fa6";
 
 export const ContactForm = () => {
     return (
         <form
             className="flex flex-col w-full bg-white bg-opacity-80 shadow-lg shadow-black/[0.03] rounded-2xl p-5"
             action={async (formData) => {
-                await sendMailAction(formData);
+                const {error} = await sendMailAction(formData);
+
+                if (error !== undefined) {
+                    toast.error('Something went wrong. Please try again later.');
+                    return;
+                }
+                toast.success('Your message was sent successfully!');
             }}
         >
             <FormInput
@@ -63,9 +71,10 @@ export const ContactForm = () => {
             </div>
 
             <div className="mt-6">
-                <Button aria-label="Send Message">
-                    Send Message
-                </Button>
+                <SubmitButton>
+                    Submit{" "}
+                    <FaPaperPlane className="text-xs opacity-70 transition-all group-hover:translate-x-1" />
+                </SubmitButton>
             </div>
         </form>
     );
