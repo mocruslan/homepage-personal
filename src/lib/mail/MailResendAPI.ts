@@ -3,6 +3,8 @@ import {AbstractMailAPI} from "@/src/lib/mail/abstract/AbstractMailAPI";
 import {Resend} from "resend";
 import {MailEntity} from "@/src/lib/mail/MailEntity";
 import {ErrorHelper} from "@/src/utils/Helper/ErrorHelper";
+import {ContactFormEmail} from "@/src/email/ContactFormEmail";
+import React from "react";
 
 export class MailResendAPI extends AbstractMailAPI {
     protected client?: Resend;
