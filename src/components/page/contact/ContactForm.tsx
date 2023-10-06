@@ -8,13 +8,20 @@ import {
     FIELD_NAME_MESSAGE,
     FIELD_NAME_SUBJECT
 } from "@/src/lib/mail/MailConst";
+import toast from "react-hot-toast";
 
 export const ContactForm = () => {
     return (
         <form
             className="flex flex-col w-full bg-white bg-opacity-80 shadow-lg shadow-black/[0.03] rounded-2xl p-5"
             action={async (formData) => {
-                await sendMailAction(formData);
+                const {data, error} = await sendMailAction(formData);
+
+                if (error !== undefined) {
+                    toast.error('Something went wrong. Please try again later.');
+                } else {
+                    toast.success('Your message was sent successfully!');
+                }
             }}
         >
             <FormInput
