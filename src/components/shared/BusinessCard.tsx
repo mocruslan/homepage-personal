@@ -58,7 +58,7 @@ const BackSite = () => {
             </p>
 
             <p className="pt-[4rem] w-full text-left">
-                <span className="font-medium uppercase">Email:</span>&nbsp;mochulskyy.ruslan@gmail.com
+                <span className="font-medium uppercase">Email:</span>&nbsp;business@mochulskyy.dev
             </p>
             <p className="w-full text-left">
                 <span className="font-medium uppercase">Location:</span>&nbsp;Graz, Austria
