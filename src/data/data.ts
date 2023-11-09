@@ -4,8 +4,6 @@ import {BiLogoMongodb, BiLogoTypescript} from "react-icons/bi";
 import {SiAmazondynamodb, SiMariadb} from "react-icons/si";
 import {TbBrandNextjs} from "react-icons/tb";
 import PlaceHolderWebsite1 from "@/public/img/placeholder-website-1.png";
-import PlaceHolderWebsite2 from "@/public/img/placeholder-website-2.png";
-import PlaceHolderWebsite3 from "@/public/img/placeholder-website-3.png";
 
 export const navLinks = [
     {
@@ -96,69 +94,57 @@ export const skills = [
 
 export const careerTimelineItems = [
     {
-        title: 'Sample Company',
-        role: 'Software Engineer',
-        description: "Nulla proident deserunt labore sint nostrud minim ipsum sunt ut consequat dolor in commodo veniam sunt. Irure aliquip quis sint consequat dolore nisi anim nisi occaecat veniam aliqua ullamco quis. Consequat commodo ipsum dolore do sint. Anim deserunt officia ipsum quis id nulla sint reprehenderit laboris eiusmod sunt.",
+        company: 'Körbler GmbH',
+        dateFrom: '2016/07',
+        dateTo: '2016/08',
+        role: 'Internship',
+        description: "Web design (HTML, CSS, jQuery, JavaScript, PHP, LESS), development of an Electron application, use of PL/SQL and SQL",
         sidePosition: "left" as "left" | "right",
     },
     {
-        title: 'Sample Company',
-        role: 'Software Engineer',
-        description: "Nulla proident deserunt labore sint nostrud minim ipsum sunt ut consequat dolor in commodo veniam sunt. Irure aliquip quis sint consequat dolore nisi anim nisi occaecat veniam aliqua ullamco quis. Consequat commodo ipsum dolore do sint. Anim deserunt officia ipsum quis id nulla sint reprehenderit laboris eiusmod sunt.",
+        company: 'Körbler GmbH',
+        dateFrom: '2017/07',
+        dateTo: '2017/08',
+        role: 'Internship',
+        description: "Web design (HTML, CSS, jQuery, JavaScript, PHP, LESS), development of an Electron application, use of PL/SQL and SQL",
         sidePosition: "right" as "left" | "right",
     },
     {
-        title: 'Sample Company',
-        role: 'Software Engineer',
-        description: "Nulla proident deserunt labore sint nostrud minim ipsum sunt ut consequat dolor in commodo veniam sunt. Irure aliquip quis sint consequat dolore nisi anim nisi occaecat veniam aliqua ullamco quis. Consequat commodo ipsum dolore do sint. Anim deserunt officia ipsum quis id nulla sint reprehenderit laboris eiusmod sunt.",
+        company: 'CAMPUSonline',
+        role: 'Internship & thesis',
+        dateFrom: '2017/10',
+        dateTo: '2019/05',
+        description: "Application of PL/SQL, HTML and CSS",
         sidePosition: "left" as "left" | "right",
     },
     {
-        title: 'Sample Company',
-        role: 'Software Engineer',
-        description: "Nulla proident deserunt labore sint nostrud minim ipsum sunt ut consequat dolor in commodo veniam sunt. Irure aliquip quis sint consequat dolore nisi anim nisi occaecat veniam aliqua ullamco quis. Consequat commodo ipsum dolore do sint. Anim deserunt officia ipsum quis id nulla sint reprehenderit laboris eiusmod sunt.",
+        company: 'DiniTech GmbH',
+        role: 'Junior developer',
+        dateFrom: '2020/06',
+        dateTo: '2022/08',
+        description: "Embedded development (C), backend (Python, Go, NoSQL, AWS), frontend (Swift, SwiftUI, Kotlin)",
         sidePosition: "right" as "left" | "right",
     },
     {
-        title: 'Sample Company',
-        role: 'Software Engineer',
-        description: "Nulla proident deserunt labore sint nostrud minim ipsum sunt ut consequat dolor in commodo veniam sunt. Irure aliquip quis sint consequat dolore nisi anim nisi occaecat veniam aliqua ullamco quis. Consequat commodo ipsum dolore do sint. Anim deserunt officia ipsum quis id nulla sint reprehenderit laboris eiusmod sunt.",
+        company: 'niceshops GmbH',
+        role: 'Backend developer and DevOps engineer',
+        dateFrom: '2022/09',
+        dateTo: 'now',
+        description: "PHP, TypeScript, CSS, Gitlab, Kotlin, Lit, Webpack, Cypress, Jest",
         sidePosition: "left" as "left" | "right",
     },
 ];
 
 export const projects = [
     {
-        title: 'Sample Project',
-        description: "Nulla proident deserunt labore sint nostrud minim ipsum sunt ut consequat dolor in commodo veniam sunt. Irure aliquip quis sint consequat dolore nisi anim nisi occaecat veniam aliqua ullamco quis.",
+        company: 'Personal homepage',
+        description: "This is my personal homepage. It is built with Next.js and Tailwind CSS. The source code is available on GitHub.",
         programmingLanguages: [
-            "C",
-            "PHP",
-            "JavaScript",
+            "NextJS",
+            "TypeScript",
+            "Tailwind CSS",
         ],
         image: PlaceHolderWebsite1,
-        link: "https://google.com",
-    },
-    {
-        title: 'Sample Project',
-        description: "Nulla proident deserunt labore sint nostrud minim ipsum sunt ut consequat dolor in commodo veniam sunt. Irure aliquip quis sint consequat dolore nisi anim nisi occaecat veniam aliqua ullamco quis.",
-        programmingLanguages: [
-            "C",
-            "PHP",
-            "JavaScript",
-        ],
-        image: PlaceHolderWebsite2,
-        link: "https://google.com",
-    },
-    {
-        title: 'Sample Project',
-        description: "Nulla proident deserunt labore sint nostrud minim ipsum sunt ut consequat dolor in commodo veniam sunt. Irure aliquip quis sint consequat dolore nisi anim nisi occaecat veniam aliqua ullamco quis.",
-        programmingLanguages: [
-            "C",
-            "PHP",
-            "JavaScript",
-        ],
-        image: PlaceHolderWebsite3,
-        link: "https://google.com",
+        link: "https://github.com/mocruslan/homepage-personal",
     },
 ] as const;
