@@ -13,9 +13,7 @@ const Projects = () => {
                     </ParagraphTitle>
 
                     <p className="mx-auto text-left font-light w-full px-6 sm:w-[38rem]">
-                        Ad labore tempor officia dolor minim qui ullamco magna. Voluptate mollit veniam do veniam Lorem nulla pariatur velit. Laboris sint nulla sunt nulla occaecat. Velit commodo non ut. Tempor pariatur quis magna excepteur. Officia commodo nostrud reprehenderit adipisicing esse ea laboris sit.
-                        <br/><br/>
-                        Ad labore tempor officia dolor minim qui ullamco magna. Voluptate mollit veniam do veniam Lorem nulla pariatur velit. Laboris sint nulla sunt nulla occaecat. Velit commodo non ut. Tempor pariatur quis magna excepteur. Officia commodo nostrud reprehenderit adipisicing esse ea laboris sit.
+                        Check out my projects page, where you&aposll find practical apps and tools I&aposve built. It&aposs simple and straightforward – no fluff, just a bunch of cool stuff I made while learning and experimenting with code. Browse around, see what I&aposve been up to, and maybe you&aposll get some ideas for your own projects. Have fun exploring!
                     </p>
                 </article>
 
