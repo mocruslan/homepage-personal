@@ -19,7 +19,9 @@ const fadeInAnimationVariants = {
 }
 
 type TimelineItemProps = {
-    title: string,
+    company: string,
+    dateFrom: string,
+    dateTo: string,
     role: string,
     description: string,
     sidePosition: "left" | "right",
@@ -29,7 +31,7 @@ type TimelineProps = {
     items: TimelineItemProps[],
 }
 
-const TimelineBox = ({title, role, description, sidePosition}: TimelineItemProps) => {
+const TimelineBox = ({company, role, dateFrom, dateTo, description, sidePosition}: TimelineItemProps) => {
     return (
         <div className={cn(
             "mb-8 w-full text-left sm:flex sm:items-center sm:justify-between",
@@ -44,8 +46,9 @@ const TimelineBox = ({title, role, description, sidePosition}: TimelineItemProps
             </div>
 
             <div className="bg-white border border-black/[0.1] rounded-xl shadow-xl px-6 py-4 sm:w-5/12 sm:order-1 hover:scale-105 hover:bg-gray-100 transition">
-                <h3 className="mb-3 font-bold text-gray-900 text-xl">{title}</h3>
-                <h4 className="mb-1 font-normal text-gray-850 text-sm">{role}</h4>
+                <h3 className="font-bold text-gray-900 text-xl">{company}</h3>
+                <h4 className="mb-2 font-normal text-gray-800 text-sm">{dateFrom} - {dateTo}</h4>
+                <h4 className="mb-1 font-normal text-gray-850 text-md">{role}</h4>
 
                 <p className="font-light text-sm text-gray-800">{description}</p>
             </div>

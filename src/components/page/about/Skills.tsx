@@ -28,7 +28,6 @@ export const Skills = () => {
                 Skills
             </ParagraphTitle>
 
-            {/* TODO: Check whether gap or mb is better and adapt the project*/}
             <ul className="flex flex-wrap justify-center gap-2 text-lg text-gray-800">
                 {skills.map((skill, index: number) => (
                     <motion.li
