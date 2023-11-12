@@ -1,7 +1,7 @@
 import React from 'react';
-import {projects} from "@/src/data/data";
 import {ProjectCard} from "@/src/components/page/projects/ProjectCard";
 import ParagraphTitle from "@/src/components/ParagraphTitle";
+import {projectsData} from "@/src/data/projects/ProjectsData";
 
 const Projects = () => {
     return (
@@ -18,7 +18,7 @@ const Projects = () => {
                 </article>
 
                 {
-                    projects.map((project, index: number) => (
+                    projectsData.map((project, index: number) => (
                         <React.Fragment key={index}>
                             <ProjectCard {...project}/>
                         </React.Fragment>
