@@ -1,6 +1,6 @@
-import {careerTimelineItems} from "@/src/data/data";
 import {Timeline} from "@/src/components/shared/Timeline";
 import ParagraphTitle from "@/src/components/ParagraphTitle";
+import {careerTimelineData} from "@/src/data/about/CareerTimelineData";
 
 export const CareerTimeline = () => {
     return (
@@ -9,7 +9,7 @@ export const CareerTimeline = () => {
                 Experience
             </ParagraphTitle>
 
-            <Timeline items={careerTimelineItems}/>
+            <Timeline items={careerTimelineData}/>
         </section>
     );
 }

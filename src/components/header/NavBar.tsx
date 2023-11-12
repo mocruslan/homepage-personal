@@ -3,7 +3,7 @@
 import React from "react";
 import Link from "next/link";
 import {motion} from "framer-motion";
-import {navLinks} from "@/src/data/data";
+import {navLinkData} from "@/src/data/navigation/NavLinkData";
 
 export const NavBar = () => {
     return (
@@ -15,7 +15,7 @@ export const NavBar = () => {
                 <nav className="flex fixed left-1/2 h-12 -translate-x-1/2 py-2 sm:h-[initial] sm:py-0">
                     <ul className="flex w-[22rem] flex-wrap items-center justify-center gap-y-1 text-[0.9rem] font-medium text-gray-500 sm:w-[initial] sm:flex-nowrap sm:gap-5">
                         {
-                            navLinks.map((navItem: NavItemProps) => (
+                            navLinkData.map((navItem: NavItemProps) => (
                                 <NavItem key={navItem.name} name={navItem.name} href={navItem.href}/>
                             ))
                         }

@@ -1,0 +1,42 @@
+export const careerTimelineData = [
+    {
+        company: 'Körbler GmbH',
+        dateFrom: '2016/07',
+        dateTo: '2016/08',
+        role: 'Internship',
+        description: "Web design (HTML, CSS, jQuery, JavaScript, PHP, LESS), development of an Electron application, use of PL/SQL and SQL",
+        sidePosition: "left" as "left" | "right",
+    },
+    {
+        company: 'Körbler GmbH',
+        dateFrom: '2017/07',
+        dateTo: '2017/08',
+        role: 'Internship',
+        description: "Web design (HTML, CSS, jQuery, JavaScript, PHP, LESS), development of an Electron application, use of PL/SQL and SQL",
+        sidePosition: "right" as "left" | "right",
+    },
+    {
+        company: 'CAMPUSonline',
+        role: 'Internship & thesis',
+        dateFrom: '2017/10',
+        dateTo: '2019/05',
+        description: "Application of PL/SQL, HTML and CSS",
+        sidePosition: "left" as "left" | "right",
+    },
+    {
+        company: 'DiniTech GmbH',
+        role: 'Junior developer',
+        dateFrom: '2020/06',
+        dateTo: '2022/08',
+        description: "Embedded development (C), backend (Python, Go, NoSQL, AWS), frontend (Swift, SwiftUI, Kotlin)",
+        sidePosition: "right" as "left" | "right",
+    },
+    {
+        company: 'niceshops GmbH',
+        role: 'Backend developer and DevOps engineer',
+        dateFrom: '2022/09',
+        dateTo: 'now',
+        description: "PHP, TypeScript, CSS, Gitlab, Kotlin, Lit, Webpack, Cypress, Jest",
+        sidePosition: "left" as "left" | "right",
+    },
+];

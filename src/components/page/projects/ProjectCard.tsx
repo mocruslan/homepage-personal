@@ -1,8 +1,8 @@
-import {projects} from "@/src/data/data";
 import Image from "next/image";
 import Link from "next/link";
+import {projectsData} from "@/src/data/projects/ProjectsData";
 
-type ProjectCardProps = typeof projects[number];
+type ProjectCardProps = typeof projectsData[number];
 
 export const ProjectCard = ({company, description, programmingLanguages, image, link}: ProjectCardProps) => {
     return (
