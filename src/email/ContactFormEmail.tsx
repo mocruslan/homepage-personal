@@ -20,7 +20,7 @@ const ContactFormEmail = ({senderEmail, message}: ContactFormEmailProps) => {
                             </Heading>
                             <Text>{message}</Text>
                             <Hr/>
-                            <Text>The sender&apos;s email is: {senderEmail}</Text>
+                            <Text>The sender&lsquo;;s email is: {senderEmail}</Text>
                         </Section>
                     </Container>
                 </Body>
