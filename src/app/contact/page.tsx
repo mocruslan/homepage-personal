@@ -17,7 +17,7 @@ const Contact = () => {
         <main className="relative container mx-auto">
             <section>
                 <ParagraphTitle>
-                    Let&apos;s get in contact!
+                    Let&lsquo;;s get in contact!
                 </ParagraphTitle>
 
                 <div className="flex flex-col items-center justify-center gap-5">

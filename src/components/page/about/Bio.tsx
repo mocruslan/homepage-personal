@@ -10,7 +10,7 @@ export const Bio = () => {
                     </ParagraphTitle>
 
                      <article className="text-gray-950 text-left font-extralight">
-                        Hello there, I&aposm a software engineer with a burning passion for code and innovation. I&aposm on an exhilarating journey towards mastering the art of Full-Stack Development.
+                        Hello there, I&lsquo;m a software engineer with a burning passion for code and innovation. I&lsquo;m on an exhilarating journey towards mastering the art of Full-Stack Development.
                     </article>
                 </span>
 

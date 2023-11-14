@@ -13,7 +13,7 @@ const Projects = () => {
                     </ParagraphTitle>
 
                     <p className="mx-auto text-left font-light w-full px-6 sm:w-[38rem]">
-                        Check out my projects page, where you&aposll find practical apps and tools I&aposve built. It&aposs simple and straightforward – no fluff, just a bunch of cool stuff I made while learning and experimenting with code. Browse around, see what I&aposve been up to, and maybe you&aposll get some ideas for your own projects. Have fun exploring!
+                        Check out my projects page, where you&lsquo;ll find practical apps and tools I&lsquo;ve built. It&lsquo;s simple and straightforward – no fluff, just a bunch of cool stuff I made while learning and experimenting with code. Browse around, see what I&lsquo;ve been up to, and maybe you&lsquo;ll get some ideas for your own projects. Have fun exploring!
                     </p>
                 </article>
 
